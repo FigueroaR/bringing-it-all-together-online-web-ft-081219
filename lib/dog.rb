@@ -6,7 +6,7 @@ class Dog
     @id = id
     @name = name 
     @breed = breed
-    self.new(name, breed)
+    #self.new(name, breed)
     #binding.pry 
   end 
   
@@ -26,6 +26,6 @@ class Dog
     DB[:conn].execute(sql)
   end 
   
-  def save
+  def self.create 
   end 
 end 
