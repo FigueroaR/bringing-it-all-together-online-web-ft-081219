@@ -9,4 +9,9 @@ class Dog
     #binding.pry 
   end 
   
+  def self.create_table
+    CREATE TABLE dogs 
+    id 
+  end 
+  
 end 
