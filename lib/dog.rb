@@ -34,7 +34,7 @@ class Dog
       VALUES (?,?)"
       
       DB[:conn].execute(sql)
-      @id = DB[:conn]
+      @id = DB[:conn].execute("SELECT * FROM last_inset_rowid() 
     
   end 
 end 
