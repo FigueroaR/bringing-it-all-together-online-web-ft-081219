@@ -31,7 +31,7 @@ class Dog
     else
       sql = " 
       INSERT INTO dogs (name, breed)
-      VALUES (?,?)", name, breed)
+      VALUES (?,?)"
     
   end 
 end 
