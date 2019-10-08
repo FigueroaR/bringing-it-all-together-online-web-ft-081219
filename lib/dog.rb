@@ -74,4 +74,8 @@ class Dog
       end
       new_dog
   end
+  
+  def self.find_by_name(name)
+    DB[:conn].execute("SELECT * FROM dogs WHERE name = ?", name)
+  end
 end 
