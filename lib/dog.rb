@@ -6,6 +6,7 @@ class Dog
     @id = id
     @name = name 
     @breed = breed
+    self.new(name, breed)
     #binding.pry 
   end 
   
