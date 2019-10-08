@@ -2,12 +2,11 @@ require 'pry'
 class Dog 
   attr_accessor :id, :name, :breed
   
-  def initialize(id: ,name:, breed:)
+  def initialize(hash)
     @id = id
-    @name = name[:name]
-    @breed = breed[:breed]
-    #self.new(name, breed)
-    #binding.pry 
+    @name = name
+    @breed = breed
+    binding.pry 
   end 
   
   def self.create_table
