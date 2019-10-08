@@ -76,6 +76,7 @@ class Dog
   end
   
   def self.find_by_name(name)
-    DB[:conn].execute("SELECT * FROM dogs WHERE name = ?", name)
+    DB[:conn].execute("SELECT * FROM dogs WHERE name = ?", name).map |row|
+    do row
   end
 end 
