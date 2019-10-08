@@ -42,12 +42,14 @@ class Dog
   end 
   
   def self.new_from_db(row)
-    attributes_hash = {
-      :id => row[0],
-      :name => row[1],
-      :breed => row[2]
+    dog = { 
+      :id => row[0], 
+    :name => row[1], 
+    :type => row[2]
     }
-    self.new(attributes_hash)
+    
+    self.new(dog)
+    
     #binding.pry 
   end 
 end 
