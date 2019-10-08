@@ -82,7 +82,7 @@ class Dog
   end
   
   def update
-    DB[:conn].execute("UPDATE )
+    DB[:conn].execute("UPDATE dogs ")
   end 
   
   
