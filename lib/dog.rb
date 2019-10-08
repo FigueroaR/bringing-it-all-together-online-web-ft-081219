@@ -4,9 +4,9 @@ class Dog
   
   def initialize(id: , name:, breed:)
     @id = id 
-    self.name = name 
-    self.breed = breed
-    #binding.pry 
+    @name = name 
+    @breed = breed
+    binding.pry 
   end 
   
 end 
