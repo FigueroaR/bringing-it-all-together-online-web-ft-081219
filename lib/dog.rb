@@ -30,7 +30,8 @@ class Dog
       self.update
     else
       sql = " 
-      INSERT INTO dogs "
+      INSERT INTO dogs (name, breed)
+      VALUES (?,?)", name, breed)
     
   end 
 end 
