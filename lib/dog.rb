@@ -52,8 +52,8 @@ class Dog
   end 
   
   def self.find_by_id(id)
-    binding.pry
-    #DB[conn:].execute("SELECT * FROM dogs WHERE id = ?",  )
+    #binding.pry
+    DB[conn:].execute("SELECT * FROM dogs WHERE id = ?",  id)
   end 
   
 end 
