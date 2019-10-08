@@ -6,7 +6,7 @@ class Dog
     @id = id
     @name = hash[0]
     @breed = hash[1]
-    binding.pry 
+    #binding.pry 
   end 
   
   def self.create_table
