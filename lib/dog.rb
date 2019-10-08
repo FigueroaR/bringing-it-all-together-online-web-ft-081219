@@ -45,7 +45,7 @@ class Dog
     dog = { 
       :id => row[0], 
       :name => row[1], 
-      :type => row[2]
+      :breed => row[2]
     }
     self.new(dog)
     #binding.pry 
