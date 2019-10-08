@@ -26,6 +26,7 @@ class Dog
     DB[:conn].execute(sql)
   end 
   
-  def self.create 
+  def self.create(hash)
+    binding.pry
   end 
 end 
