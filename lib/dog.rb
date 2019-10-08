@@ -6,7 +6,7 @@ class Dog
     @id = id 
     @name = name 
     @breed = breed
-    binding.pry 
+    #binding.pry 
   end 
   
 end 
