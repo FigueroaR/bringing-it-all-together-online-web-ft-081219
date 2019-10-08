@@ -29,7 +29,8 @@ class Dog
     if self.id
       self.update
     else
-      sql = " "
+      sql = " 
+      INSERT INTO dogs "
     
   end 
 end 
