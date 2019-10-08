@@ -42,6 +42,8 @@ class Dog
   end 
   
   def self.new_from_db(row)
+    row = 
+    
     dog = 
     
     #binding.pry 
