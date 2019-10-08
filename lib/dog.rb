@@ -4,8 +4,8 @@ class Dog
   
   def initialize(id: ,name:, breed:)
     @id = id
-    @name = name
-    @breed = breed
+    @name = name[:name]
+    @breed = breed[:breed]
     #self.new(name, breed)
     #binding.pry 
   end 
@@ -26,10 +26,10 @@ class Dog
     DB[:conn].execute(sql)
   end 
   
-  def self.create(hash)
-    dog = self.new(hash[:name], hash[:breed])
-    dog.save
-    dog 
+  #def self.create(hash)
+    #dog = self.new(hash[:name], hash[:breed])
+    #dog.save
+    #dog 
     #binding.pry
-  end 
+  #end 
 end 
