@@ -10,8 +10,11 @@ class Dog
   end 
   
   def self.create_table
-    CREATE TABLE dogs 
-    id 
+    DB[:conn).execute("CREATE TABLE dogs 
+    
+    id INTEGER PRIMARY ID
+    name TEXT
+    breed TEXT " 
   end 
   
 end 
