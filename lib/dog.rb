@@ -48,6 +48,6 @@ class Dog
     dog.type = [2]
     dog
     
-    binding.pry 
+    #binding.pry 
   end 
 end 
