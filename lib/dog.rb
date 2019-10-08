@@ -43,7 +43,7 @@ class Dog
   
   def self.new_from_db(row)
     dog = { :id => row[0], :name => row[1], :type => row[3]}
-    self.new(row)
+    self.new(dog)
     
     #binding.pry 
   end 
