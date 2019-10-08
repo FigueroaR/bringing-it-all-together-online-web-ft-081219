@@ -42,11 +42,7 @@ class Dog
   end 
   
   def self.new_from_db(row)
-    dog = self.new 
-    dog.id = row[0]
-    dog.name = row[1]
-    dog.type = [2]
-    dog
+    dog = 
     
     #binding.pry 
   end 
