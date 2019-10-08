@@ -3,10 +3,10 @@ class Dog
   attr_accessor :id, :name, :breed
   
   def initialize(id: , name:, breed:)
-    self.id = id 
+    @id = id 
     self.name = name 
     self.breed = breed
-    binding.pry 
+    #binding.pry 
   end 
   
 end 
