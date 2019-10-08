@@ -58,4 +58,7 @@ class Dog
     end.first
   end 
   
+  def self.find_or_create
+    if self
+  end 
 end 
