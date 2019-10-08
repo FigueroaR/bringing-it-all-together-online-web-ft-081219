@@ -43,8 +43,7 @@ class Dog
   
   def self.new_from_db(row)
     hash = { :id => row[0], :name => row[1], :type => row[3]
-    
-    dog = 
+    self.new(row)
     
     #binding.pry 
   end 
