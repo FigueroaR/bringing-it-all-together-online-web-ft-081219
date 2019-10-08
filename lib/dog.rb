@@ -4,8 +4,8 @@ class Dog
   
   def initialize(id: ,name:, breed:)
     @id = id
-    @name = name 
-    @breed = breed
+    @name = name[name:]
+    @breed = breed[breed:]
     #self.new(name, breed)
     #binding.pry 
   end 
