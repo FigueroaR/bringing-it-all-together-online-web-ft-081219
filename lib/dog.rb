@@ -2,7 +2,7 @@ require 'pry'
 class Dog 
   attr_accessor :id, :name, :breed
   
-  def initialize(hash)
+  def initialize(hash, name:, breed:)
     @id = id
     @name = hash[1]
     @breed = hash[2]
