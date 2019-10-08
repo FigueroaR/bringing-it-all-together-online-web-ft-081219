@@ -2,7 +2,7 @@ require 'pry'
 class Dog 
   attr_accessor :id, :name, :breed
   
-  def initialize(id: , name:, breed:)
+  def initialize(id: , name[name:], breed[breed:])
     @id = nil
     @name = name 
     @breed = breed
@@ -26,15 +26,5 @@ class Dog
   end 
   
   def save
-    if self.id
-      self.update
-    else
-      sql = " 
-      INSERT INTO dogs (name, breed)
-      VALUES (?,?)"
-      
-      DB[:conn].execute(sql)
-      @id = DB[:conn].execute("SELECT last_inset_rowid() FROM dogs")[0][0]
-    end
   end 
 end 
