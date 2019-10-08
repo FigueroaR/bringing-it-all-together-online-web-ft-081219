@@ -27,6 +27,6 @@ class Dog
   end 
   
   def self.create(hash)
-    binding.pry
+    #binding.pry
   end 
 end 
